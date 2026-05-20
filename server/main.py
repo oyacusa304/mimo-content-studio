@@ -11,10 +11,11 @@ app = FastAPI(title="MiMo Content Studio API", version="1.0.0")
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*", "https://mimo-content-studio.vercel.app", "http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_origin_regex="https://.*\.vercel\.app",
 )
 
 # Models
