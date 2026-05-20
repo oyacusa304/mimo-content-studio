@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://mimo-content-studio-production.up.railway.app';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://mimo-content-studio-production.up.railway.app:8090';
 
 type TabType = 'text' | 'image' | 'voice' | 'pipeline';
 
